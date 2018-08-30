@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tensorbuild
+spec:
+  containers:
+  - name: tensorbuild
+    image: sidstuart/tensorbuild:latest
+    command:
+      - sleep
+      - 8h
+  nodeSelector:
+    kubernetes.io/hostname: biggpu01
+
+    
