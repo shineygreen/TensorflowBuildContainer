@@ -1,8 +1,8 @@
 # TensorflowBuildContainer
 This repository holds the configuration files to build a Docker container and deploy it as a pod in a Kubernetes cluster.
 ## Details
-This repository contains a Dockerfile, a build script and a Kubernetes pod definition. Together they create a container
-that can be used to build a Tensorflow 1.4.2 Python wheel. It should be fairly easy to update the dockerfile to build a different release. The dockerfile currently specifies a particular release of Bazel because the 1.4.2 Tensorflow release requires it. I believe later releases can work with the latest version of Bazel, but I have not tested to be sure.
+This repository contains a dockerfile, a build script and a Kubernetes pod definition. Together they create a container
+that can be used to build a Tensorflow 1.4.2 Python wheel. It should be fairly easy to update the dockerfile to build a different release. The dockerfile currently specifies a particular release of Bazel because the 1.4.2 Tensorflow release requires it. I believe later releases can work with the latest version of Bazel, but have not tested to be sure.
 
 
 Breifly the instructions are, 
